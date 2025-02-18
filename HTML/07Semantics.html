@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantics in HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            margin: 5px 0;
+        }
+        ol {
+            margin: 10px 0;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Semantics in HTML</h1>
+    <p>Semantics in HTML refers to the meaningful use of HTML tags that convey the meaning of the content contained within them. Semantic HTML enhances the accessibility, search engine optimization (SEO), and maintainability of web pages.</p>
+
+    <h2>Key Benefits of Semantic HTML</h2>
+    <ul>
+        <li><strong>Improved Accessibility:</strong> Better interpretation and navigation for users with disabilities.</li>
+        <li><strong>SEO Advantages:</strong> Enhanced understanding of the structure and content by search engines.</li>
+        <li><strong>Maintainability:</strong> Clearer structure for developers to read and maintain the code.</li>
+    </ul>
+
+    <h2>Examples of Semantic HTML Elements</h2>
+    <ul>
+        <li><code>&lt;header&gt;</code>: Represents introductory content or a group of navigational links.</li>
+        <li><code>&lt;nav&gt;</code>: Defines a set of navigation links.</li>
+        <li><code>&lt;article&gt;</code>: Represents a self-contained piece of content.</li>
+        <li><code>&lt;section&gt;</code>: Represents a thematic grouping of content.</li>
+        <li><code>&lt;footer&gt;</code>: Represents the footer for its nearest sectioning content.</li>
+        <li><code>&lt;aside&gt;</code>: Represents content tangentially related to the surrounding content.</li>
+        <li><code>&lt;main&gt;</code>: Represents the dominant content of the body.</li>
+    </ul>
+    <ul>
+        <li><code>&lt;div&gt;</code></li>
+        <li><code>&lt;section&gt;</code></li>
+        <li><code>&lt;span&gt;</code></li>
+    </ul>
+
+    <h2>Example of Semantic HTML</h2>
+    <pre>
+        <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Semantic HTML Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;header&gt;
+        &lt;h1&gt;My Blog&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;article&gt;
+            &lt;h2&gt;Understanding Semantic HTML&lt;/h2&gt;
+            &lt;p&gt;Semantic HTML is about using HTML markup to reinforce the meaning of the content.&lt;/p&gt;
+        &lt;/article&gt;
+
+        &lt;section&gt;
+            &lt;h2&gt;Benefits of Semantic HTML&lt;/h2&gt;
+            &lt;p&gt;Using semantic elements makes your web content easier to read and understand.&lt;/p&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&copy; 2024 My Blog&lt;/p&gt;
+    &lt;/footer&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+        </code>
+    </pre>
+
+    <h2>Assignment Questions and Answers</h2>
+    <ol>
+        <li><strong>What is semantic HTML?</strong>
+            <p>Semantic HTML refers to the use of HTML tags that convey the meaning of the content, improving accessibility, SEO, and maintainability.</p>
+        </li>
+        <li><strong>Why is semantic HTML important for accessibility?</strong>
+            <p>Semantic HTML provides structure and meaning to web content, allowing assistive technologies like screen readers to interpret the document correctly.</p>
+        </li>
+        <li><strong>What are some common semantic HTML elements?</strong>
+            <p>Common semantic HTML elements include <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;aside&gt;</code>, and <code>&lt;main&gt;</code>.</p>
+        </li>
+        <li><strong>How does semantic HTML benefit SEO?</strong>
+            <p>Search engines use semantic elements to understand the content and structure of a webpage better, enhancing search rankings.</p>
+        </li>
+        <li><strong>Give an example of a semantic element and its use.</strong>
+            <p>The <code>&lt;article&gt;</code> element represents a self-contained piece of content, such as a blog post or news article.</p>
+        </li>
+        <li><strong>How does using semantic HTML improve maintainability?</strong>
+            <p>Semantic HTML provides a clearer structure, making the code easier to read, understand, and maintain for developers.</p>
+        </li>
+        <li><strong>What is the role of the &lt;main&gt; element in semantic HTML?</strong>
+            <p>The <code>&lt;main&gt;</code> element represents the dominant content of the <code>&lt;body&gt;</code>, excluding headers, footers, navigation, and sidebars.</p>
+        </li>
+        <li><strong>What is the difference between the &lt;section&gt; and &lt;div&gt; elements?</strong>
+            <p>The <code>&lt;section&gt;</code> element is used for thematically grouped content with a heading, while the <code>&lt;div&gt;</code> element is a generic container with no inherent meaning.</p>
+        </li>
+        <li><strong>Can non-semantic elements still be used in HTML?</strong>
+            <p>Yes, non-semantic elements like <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> can be used, but they do not convey meaning and should be replaced with semantic elements when possible.</p>
+        </li>
+        <li><strong>What is an example of a nested semantic structure?</strong>
+            <p>A common nested structure includes a <code>&lt;header&gt;</code> containing a <code>&lt;nav&gt;</code> with an unordered list of links, and the main content includes multiple <code>&lt;article&gt;</code> and <code>&lt;section&gt;</code> elements.</p>
+        </li>
+    </ol>
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Semantics tags in <abbr title="HyperText Markup Language">HTML</abbr></h1>
+    <dl>
+        <dt><h2>&lt;article&gt;</h2> </dt>
+        <dd>
+            <h4>Definition and Usage</h4> 
+            <p>The &lt;article&gt; tag specifies independent, self-contained content.</p>
+            <p>An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.</p>
+            <p>Potential sources for the <article> element:</p>
+                <ul>
+                    <li> Forum post</li>
+                    <li> Blog post</li>
+                    <li> News story</li>                    
+                </ul>
+                <p><b>Note :</b>  The <strong>&lt;article&gt;</strong>  element does not render as anything special in a browser. However, you can use CSS to style the &lt;article&gt; element (see example below).</p> 
+        </dd>
+    </dl>
+    <p>  </p>
+    <p>
+
+
+
+
+    <p>  &lt;aside&gt;</p>
+    <p>  &lt;details&gt;</p>
+    <p>  &lt;figcaption&gt;</p>
+    <p>  &lt;figure&gt;</p>
+    <p>  &lt;footer&gt;</p>
+    <p>  &lt;form&gt;</p>
+    <p>  &lt;header&gt;</p>
+    <p>  &lt;main&gt;</p>
+    <p>  &lt;mark&gt;</p>
+    <p>  &lt;nav&gt;</p>
+    <p>  &lt;section&gt;</p>
+    <p>  &lt;summary&gt;</p>
+    <p>  &lt;time&gt;</p>
+</body>
+</html> -->
