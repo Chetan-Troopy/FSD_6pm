@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form In HTML</title>
+</head>
+<body>
+    <h1>Form In HTML</h1>
+    <p>action => Backend file path</p>
+    <p>method => We have two Methods</p>
+    <ol>
+        <li>get => by default, limitation of character, not a secure method, shows data in the url, not file supported</li>
+        <li>post => No limitation, secure method, Never shows data in the url, file supported</li>
+    </ol>
+    <p>enctype</p>
+    <ul>
+        <li>application/x-www-form-urlencoded => By Default</li>
+        <li>multipart/form-data => Method must be Post,  </li>
+        <li>text/plain => For Debuuging Purpose</li>
+    </ul>
+
+
+    <fieldset>
+        <legend>My Form</legend>
+        <!-- <form action="" method="" enctype=""> -->
+            <form action="" method="post">
+                <!-- <form action="" method="post" enctype="multipart/form-data"> -->
+
+                <label for="uname">User Name</label>
+                <input type="text" name="uname" id="uname">
+                <br><br>
+                <label for="upass">Password </label>
+                <input type="password" name="upass" id="upass">
+                <br><br>
+                <br><br>
+                <button>Submit</button>
+                <!-- <input type="submit" value="Submit"> -->
+
+        </form>
+    </fieldset>
+</body>
+</html>
