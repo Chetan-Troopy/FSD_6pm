@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Tag - Questions & Tasks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #ddd;
+        }
+        .code {
+            background-color: #eef;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML Table Tag</h1>
+        <h2>10 Interview Questions and Answers</h2>
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Question</th>
+                <th>Answer</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>What is the &lt;table&gt; tag used for?</td>
+                <td>It defines a table in HTML.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>What are the main elements of a table?</td>
+                <td>&lt;tr&gt;, &lt;th&gt;, &lt;td&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, &lt;caption&gt;.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Difference between &lt;th&gt; and &lt;td&gt;?</td>
+                <td>&lt;th&gt; is bold and center-aligned, &lt;td&gt; is normal text.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>What is colspan and rowspan?</td>
+                <td>Colspan merges columns, Rowspan merges rows.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>How do you add a border to a table?</td>
+                <td>Use the <code>border="1"</code> attribute.</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Purpose of &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;?</td>
+                <td>They organize table sections.</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>What is the default alignment of text in &lt;th&gt;?</td>
+                <td>Center-aligned.</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>How to create a table with a caption?</td>
+                <td>Use the &lt;caption&gt; tag.</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>How to create a fixed-width table?</td>
+                <td>Use the <code>width</code> attribute.</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>How to add spacing in a table?</td>
+                <td>Use <code>cellspacing</code> and <code>cellpadding</code>.</td>
+            </tr>
+        </table>
+        
+        <h2>10 Practical Tasks</h2>
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Task</th>
+                <th>Example Code</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Create a simple table with 3 rows and 3 columns.</td>
+                <td class="code">&lt;table border="1"&gt;...&lt;/table&gt;</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Merge two columns using colspan.</td>
+                <td class="code">&lt;th colspan="2"&gt;Merged&lt;/th&gt;</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Merge two rows using rowspan.</td>
+                <td class="code">&lt;td rowspan="2"&gt;Merged&lt;/td&gt;</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Create a table with &lt;caption&gt;.</td>
+                <td class="code">&lt;caption&gt;Student Table&lt;/caption&gt;</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Create a table with header, body, and footer.</td>
+                <td class="code">&lt;thead&gt; &lt;tbody&gt; &lt;tfoot&gt;</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Create an attendance table with checkboxes.</td>
+                <td class="code">&lt;input type="checkbox"&gt;</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Create a table with numbered rows.</td>
+                <td class="code">Use numbers in &lt;td&gt;</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Use a table to display a timetable.</td>
+                <td class="code">Rows for time slots, columns for days.</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Create a pricing table with 3 product plans.</td>
+                <td class="code">Plan 1 | Plan 2 | Plan 3</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Create a student report card using a table.</td>
+                <td class="code">Subjects | Marks | Grade</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
