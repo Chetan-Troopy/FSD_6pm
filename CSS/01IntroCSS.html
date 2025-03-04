@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Introduction</title>
+
+
+
+    <!-- External CSS  -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS  -->
+
+    <style>
+        /* Syntax  */
+
+        /* selector{
+                    property1: value1;
+                    property2: value2;
+                } */
+
+
+            .Internal{
+                color: blueviolet;
+            }
+            body{
+                background-color: black;
+                color: aliceblue;
+            }
+    </style>
+
+
+
+  </head>
+  <body>
+    <h1>CSS</h1>
+    <p><b>CSS</b> is used to beautify our HTML document.</p>
+    <p><b>CSS</b> is used make Our website Attractive.</p>
+
+    <h2>Ways To Apply CSS</h2>
+    <ul>
+      <!-- Inline CSS -->
+
+      <li style="color: brown">Inline CSS</li>
+      <li class="Internal">Internal CSS</li>
+      <li class="External">External CSS</li>
+    </ul>
+
+    <h2>Syntax of CSS</h2>
+    <ol>
+      <li style="color: brown">Inline CSS Syntax</li>
+      <ul>
+        <li style="color: brown">Inline CSS is written by using style attribute</li>
+        <pre style="color: brown">style="property1: value1; property2: value2;"</pre>
+      </ul>
+      <li class="Internal">Internal CSS Syntax</li>
+      <ul>
+        <li class="Internal">Internal CSS is written by using style tag in head section.</li>
+        <pre class="Internal">
+            &lt;style&gt;
+                selector{
+                    property1: value1;
+                    property2: value2;
+                }
+             &lt;/style&gt;
+
+        </pre>
+      </ul>
+      <li class="External">External CSS Syntax</li>
+      <ul>
+        <li class="External">External CSS is written by using link tag in head section.</li>
+        <pre class="External">
+
+            &lt;link rel="stylesheet" href="style.css"&gt;
+          
+
+            In External File 
+
+
+                selector{
+                    property1: value1;
+                    property2: value2;
+                }
+         
+
+        </pre>
+      </ul>
+    </ol>
+  </body>
+</html>
