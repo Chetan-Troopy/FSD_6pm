@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin Padding</title>
+
+    <!-- Internal CSS  -->
+
+    <style>
+        div{
+            border: 2px solid black;
+            background-color: crimson;
+            color: aliceblue;
+        }
+        /* The Distance Between Border and Screen is called Margin */
+      .margin {
+        margin: 100px;        /* All four side = 100px */
+        margin: 100px 200px;        /* Top-Bottom = 100px , Right-Left = 200px */
+        margin: 100px 200px 300px;        /* Top = 100px , Right-Left = 200px , Bottom = 300px */
+        margin: 100px 200px 300px 400px;        /* Top = 100px , Right = 200px , Bottom = 300px , Left = 400px */
+
+      }
+        /* The Distance Between Border and Content is called Padding */
+
+      .padding {
+        padding: 100px;        /* All four side = 100px */
+        padding: 100px 200px;        /* Top-Bottom = 100px , Right-Left = 200px */
+        padding: 100px 200px 300px;        /* Top = 100px , Right-Left = 200px , Bottom = 300px */
+        padding: 100px 200px 300px 400px;        /* Top = 100px , Right = 200px , Bottom = 300px , Left = 400px */
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="margin">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi excepturi
+      accusantium, rem modi ducimus nemo officiis magnam, odit aperiam,
+      voluptatibus sunt voluptatum eius veritatis impedit similique id incidunt
+      consequuntur quidem!
+    </div>
+    <hr />
+    <div class="padding">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam
+      accusamus tenetur magnam officia eius provident beatae voluptate impedit
+      quos consectetur ullam, dolor et est ratione officiis nam, vero, earum
+      nesciunt!
+    </div>
+  </body>
+</html>
