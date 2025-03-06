@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Selector</title>
+
+
+    <!-- Internal CSS  -->
+
+    <style>
+        .parent{
+            border: 2px solid black;
+        }
+        .parent p{
+            color: gold;
+            font-size: 30px;
+            background-color: teal;
+        }
+        .box{
+            border: 5px solid green;
+            width: 80%;
+            margin: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Descendant Selector(space )</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, sed.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, sed.</p>
+    <div class="parent">
+        <p class="child">Child-1</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, sed.</p>
+        <p class="child">Child-2</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, sed.</p>
+        <p class="child">Child-3</p>
+        <div class="child box">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci iure excepturi eius culpa, sunt quidem facilis quibusdam obcaecati saepe blanditiis est. Eveniet aliquam possimus impedit quidem quia adipisci in rem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci iure excepturi eius culpa, sunt quidem facilis quibusdam obcaecati saepe blanditiis est. Eveniet aliquam possimus impedit quidem quia adipisci in rem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci iure excepturi eius culpa, sunt quidem facilis quibusdam obcaecati saepe blanditiis est. Eveniet aliquam possimus impedit quidem quia adipisci in rem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci iure excepturi eius culpa, sunt quidem facilis quibusdam obcaecati saepe blanditiis est. Eveniet aliquam possimus impedit quidem quia adipisci in rem.</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, sed.</p>
+        <p class="child">Child-4</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, sed.</p>
+        <p class="child">Child-5</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, sed.</p>
+        <p class="child">Child-6</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, sed.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, sed.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, sed.</p>
+</body>
+</html>
