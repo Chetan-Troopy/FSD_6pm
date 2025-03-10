@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background CSS</title>
+    <!-- Internal CSS  -->
+
+    <style>
+
+        div{
+            border: 10px dashed blue;
+            height: 500px;
+            margin: 10px;
+            font-size: 30px;
+            color: aliceblue;
+        }
+        .background-attachment{
+            background-image: url(../../Images/img2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+        }
+        .background-clip{
+            background-image: url(../../Images/img2.jpg);
+            padding: 100px;
+            background-clip: border-box;
+            background-clip: padding-box;
+            background-clip: content-box;
+            
+        }
+        .background-origin{
+            background-image: url(../../Images/img2.jpg);
+            padding: 100px;
+            background-size: 500px;
+            background-repeat: no-repeat;
+            background-origin: border-box;
+            background-origin: padding-box;
+            background-origin: content-box;
+            
+        }
+        .background-color{
+            background-color: crimson;
+        }
+        .background-image{
+            background-image: url(../../Images/img2.jpg);
+        }
+        .background-position{
+            background-image: url(../../Images/img2.jpg);
+            background-repeat: no-repeat;
+            background-size: 300px;
+            background-position: center;
+            background-position: top;
+            background-position: left;
+            background-position: right;
+            background-position: bottom;
+            background-position: 800px 200px;
+        }
+        .background-repeat{
+            background-image: url(../../Images/img2.jpg);
+            background-repeat: repeat-x;
+            background-repeat: repeat-y;
+            background-repeat: round;
+            background-repeat: space;
+            background-repeat: no-repeat;     /* Most used value*/
+        }
+        .background-size{
+            background-image: url(../../Images/img2.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-size: cover;
+            background-size: 400px;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Background CSS</h1>
+    <hr>
+    <ol>
+       <li>background-attachment</li>
+       <li>background-clip</li>
+       <li>background-origin</li>
+       <li>background-color</li>
+       <li>background-image</li>
+       <li>background-position</li>
+       <li>background-repeat</li>
+       <li>background-size</li>
+    </ol>
+
+
+    <hr>
+
+       <div class="background-attachment">background-attachment</div>
+       <div class="background-clip">background-clip</div>
+       <div class="background-origin">background-origin</div>
+       <div class="background-color">background-color</div>
+       <div class="background-image">background-image</div>
+       <div class="background-position">background-position</div>
+       <div class="background-repeat">background-repeat</div>
+       <div class="background-size">background-size</div>
+</body>
+</html>

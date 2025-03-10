@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple Background</title>
+    <!-- Internal CSS  -->
+
+    <style>
+      .multiple-background {
+        height: 500px;
+        margin: 20px;
+        border: 10px dashed green;
+        background-image: url(../../Images/img1.jpg), url(../../Images/img3.jpg);
+        background-size: 200px, 300px;
+        background-repeat: repeat-x, no-repeat;
+        background-position: top, center;
+      }
+      .multiple-background-2 {
+        height: 500px;
+        margin: 20px;
+        border: 10px dashed green;
+        background-image:url(../../Images/img1.jpg), url(../../Images/img1.jpg) , url(../../Images/img1.jpg), url(../../Images/img1.jpg),
+          url(../../Images/img3.jpg);
+        background-size: 200px, 200px, 200px, 200px, 300px;
+        background-repeat: repeat-y, repeat-x, repeat-y, repeat-x, no-repeat;
+        background-position: right, bottom, left, top, center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Multiple Background</h1>
+    <hr />
+    <div class="multiple-background"></div>
+    <hr />
+    <div class="multiple-background-2"></div>
+  </body>
+</html>

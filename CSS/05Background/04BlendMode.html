@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blend Mode background</title>
+
+    <!-- Internal CSS  -->
+
+    <style>
+        .blend-mode{
+            height: 500px;
+        margin: 20px;
+        border: 10px dashed green;  
+        background-image: url(../../Images/img1.jpg), url(../../Images/img3.jpg);
+        background-size: 200px, 300px;
+        background-repeat: repeat-x, no-repeat;
+        background-position: center;
+        background-blend-mode: screen;
+        background-blend-mode: saturation;
+        background-blend-mode: soft-light;
+        background-blend-mode: exclusion;
+        background-blend-mode: lighten;
+        background-blend-mode: luminosity;
+        background-blend-mode: overlay;
+        }
+    </style>
+</head>
+<body>
+    <h1>Blend Mode background</h1>
+    <hr>
+    <div class="blend-mode">Blend Mode background</div>
+</body>
+</html>
