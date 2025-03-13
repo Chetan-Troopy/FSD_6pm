@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Layout</title>
+
+    <!-- Internal CSS  -->
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      img {
+        width: 100%;
+      }
+      .container {
+        width: 90%;
+        margin: auto;
+        /* border: 1px solid blue; */
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #section-1 {
+        background-color: rgb(0, 166, 226);
+      }
+      #section-2 {
+        background-color: rgb(248, 0, 0);
+        text-align: center;
+      }
+      #section-3 {
+        background-color: rgb(228, 11, 231);
+        text-align: center;
+      }
+      .wrapper{
+        padding: 50px 0px;
+      }
+      .col-50 {
+        /* border: 2px solid red;    */
+        width: 50%;
+      }
+      .col-33 {
+        /* border: 2px solid red;    */
+        width: 33.33%;
+      }
+      .col-25 {
+        /* border: 2px solid red;    */
+        width: 25%;
+      }
+      h2{
+        font-size: 50px;
+        text-align: center;
+        padding-bottom: 50px;
+        color: aliceblue;
+
+      }
+      h3{
+        font-size: 30px;
+      }
+      h3+p{
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Section Starts From Here  -->
+
+    <section id="section-1">
+      <div class="wrapper">
+        <div class="container">
+            <h2>Sub-Heading</h2>
+          <div class="row">
+            <div class="col-50">
+              <h3>Sub-Sub-Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Fugiat, labore!
+              </p>
+            </div>
+            <div class="col-50">
+              <img src="../../Images/img2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section End Here  -->
+    <!-- Section Starts From Here  -->
+
+    <section id="section-2">
+      <div class="wrapper">
+        <div class="container">
+            <h2>Sub-Heading</h2>
+          <div class="row">
+            <div class="col-33">
+              <h3>Sub-Sub-Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Fugiat, labore!
+              </p>
+            </div>
+            <div class="col-33">
+              <img src="../../Images/img2.jpg" alt="" />
+            </div>
+            <div class="col-33">
+              <h3>Sub-Sub-Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Fugiat, labore!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section End Here  -->
+
+    <!-- Section Starts From Here  -->
+
+    <section id="section-3">
+      <div class="wrapper">
+        <div class="container">
+            <h2>Sub-Heading</h2>
+          <div class="row">
+            <div class="col-25">
+              <h3>Sub-Sub-Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Fugiat, labore!
+              </p>
+            </div>
+            <div class="col-25">
+              <img src="../../Images/img2.jpg" alt="" />
+            </div>
+            <div class="col-25">
+              <h3>Sub-Sub-Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Fugiat, labore!
+              </p>
+            </div>
+            <div class="col-25">
+              <img src="../../Images/img2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section End Here  -->
+  </body>
+</html>
+
+
+
+<!-- 1. Cafe Website  -->
+<!-- 2. Riverfront Website  -->
+<!-- 3. PSD  
+https://www.freepik.com/free-psd/various-web-printable-templates-with-screen_6990247.htm#from_element=detail_alsolike 
+-->
+
+
+<!-- Complete Before Monday -->
