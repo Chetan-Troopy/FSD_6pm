@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position</title>
+    <!-- Internal CSS  -->
+
+    <style>
+
+    body{
+        background-color: black;
+        color: aliceblue;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    div[class*="box"]{
+        height: 500px;
+        border: 3px solid lime;
+        margin: 20px;
+    }
+    nav{
+        padding: 5px 10px;
+        font-size: 20px;
+    }
+    li{
+        list-style-type: none;
+        padding: 0px 30px;
+    }
+    .fixed{
+        width: 50%;
+        background-color: brown;
+        border: 5px solid blueviolet;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+    }
+    .sticky{
+        background-color: Gold;
+        color:black;
+        font-size: 30px;
+        border: 5px solid teal;
+        position: sticky;
+        top: 0px;
+    }
+    .box-5{
+        position: relative;
+    }
+    div[class*="box-ab"]{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        text-align: center;
+        color: black;
+        font-size: 20px;
+        position: absolute;
+    }
+    .box-ab-1{
+        background-color: grey;
+        top: -20px;
+        left: -20px;
+        z-index: 1; ;
+    }
+    .box-ab-2{
+        background-color: orange;
+        top: -20px;
+        right: -20px;
+    }
+    .box-ab-3{
+        background-color: red;
+        bottom: -20px;
+        left: -20px;
+    }
+    .box-ab-4{
+        background-color: purple;
+        bottom: -20px;
+        right: -20px;
+    }
+    .box-ab-5{
+        background-color: greenyellow;
+        top: 20px;
+        left: 20px;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Position</h1>
+
+    <ul>
+      <li>
+        Static ->
+        <p>
+          The element is positioned according to the Normal Flow of the
+          document. The top, right, bottom, left, and z-index properties have no
+          effect. This is the default value.
+        </p>
+      </li>
+      <li>Fixed</li>
+      <li>Sticky</li>
+      <li>Relative</li>
+      <li>Absolute</li>
+    </ul>
+
+    <hr />
+
+    <div class="box-1">
+        Box-1
+        <div class="fixed">
+            <nav class="row">
+                <h2>Fixed</h2>
+                <ul class="row">
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="box-2">Box-2</div>
+    <div class="box-3">Box-3
+        <div class="sticky">Sticky</div>
+    </div>
+    <div class="box-4">Box-4</div>
+    <div class="box-5">Box-5
+        <div class="box-ab-1">box-ab-1</div>
+        <div class="box-ab-2">box-ab-2</div>
+        <div class="box-ab-3">box-ab-3</div>
+        <div class="box-ab-4">box-ab-4</div>
+        <div class="box-ab-5">box-ab-5</div>
+    </div>
+    <hr>
+    <h2>Task Of The Day</h2>
+    <img src="../../Images/CSS_Position_Task.png" width="100%" alt="">
+  </body>
+</html>
