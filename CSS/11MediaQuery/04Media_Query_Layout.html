@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position using Flexbox Layout</title>
+
+    <!-- Internal CSS  -->
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      img {
+        width: 100%;
+      }
+      .container {
+        width: 90%;
+        margin: auto;
+        /* border: 1px solid blue; */
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #section-1 {
+        background-color: rgb(0, 166, 226);
+      }
+      #section-2 {
+        background-color: rgb(248, 0, 0);
+        text-align: center;
+      }
+      #section-3 {
+        background-color: rgb(228, 11, 231);
+        text-align: center;
+      }
+      .wrapper{
+        padding: 50px 0px;
+      }
+      .col-50 {
+        /* border: 2px solid red;    */
+        width: 50%;
+      }
+      .col-33 {
+        /* border: 2px solid red;    */
+        width: 33.33%;
+      }
+      .col-25 {
+        /* border: 2px solid red;    */
+        width: 25%;
+      }
+      h2{
+        font-size: 50px;
+        text-align: center;
+        padding-bottom: 50px;
+        color: aliceblue;
+
+      }
+      h3{
+        font-size: 30px;
+      }
+      h3+p{
+        font-size: 20px;
+      }
+      .rel{
+        position: relative;
+      }
+      .offer{
+        width: 100px;
+        position: absolute;
+        top: -55px;
+        right: 0px;
+      }
+      .z-1{
+        position: relative;
+        z-index: 1;
+      }
+
+
+      /* Media Query for Mobile Device  */
+
+      @media (max-width: 576px) { 
+        .row{
+            flex-direction: column;
+        }
+        .col-25, .col-33, .col-50{
+            width: 100%;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h2{
+            padding-bottom: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Section Starts From Here  -->
+
+    <section id="section-1">
+      <div class="wrapper">
+        <div class="container">
+            <h2>Sub-Heading</h2>
+          <div class="row">
+            <div class="col-50">
+              <h3>Sub-Sub-Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Fugiat, labore!
+              </p>
+            </div>
+            <div class="col-50 rel">
+                <img src="../../Images/offer.avif" class="offer" alt="">
+              <img src="../../Images/aditya_gadhvi.avif" class="z-1" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section End Here  -->
+    <!-- Section Starts From Here  -->
+
+    <section id="section-2">
+      <div class="wrapper">
+        <div class="container">
+            <h2>Sub-Heading</h2>
+          <div class="row">
+            <div class="col-33">
+              <h3>Sub-Sub-Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Fugiat, labore!
+              </p>
+            </div>
+            <div class="col-33 rel">
+                <img src="../../Images/offer.avif" class="offer"  alt="">
+              <img src="../../Images/aditya_gadhvi.avif" class="z-1" alt="" />
+            </div>
+            <div class="col-33">
+              <h3>Sub-Sub-Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Fugiat, labore!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section End Here  -->
+
+    <!-- Section Starts From Here  -->
+
+    <section id="section-3">
+      <div class="wrapper">
+        <div class="container">
+            <h2>Sub-Heading</h2>
+          <div class="row">
+            <div class="col-25">
+              <h3>Sub-Sub-Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Fugiat, labore!
+              </p>
+            </div>
+            <div class="col-25 rel">
+                <img src="../../Images/offer.avif" class="offer"  alt="">
+
+              <img src="../../Images/aditya_gadhvi.avif" class="z-1" alt="" />
+            </div>
+            <div class="col-25">
+              <h3>Sub-Sub-Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Fugiat, labore!
+              </p>
+            </div>
+            <div class="col-25 rel">
+                <img src="../../Images/offer.avif" class="offer"  alt="">
+
+              <img src="../../Images/aditya_gadhvi.avif" class="z-1" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section End Here  -->
+  </body>
+</html>
+
