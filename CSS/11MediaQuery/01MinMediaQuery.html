@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Min Media Query</title>
+
+    <!-- Internal CSS  -->
+
+    <style>
+      body {
+        background-color: violet;
+      }
+      h1::after {
+        content: " Original";
+      }
+
+      /* Media Query  */
+
+      /* // X-Small devices (portrait phones, less than 576px) */
+      /* // No media query for `xs` since this is the default in Bootstrap */
+
+      /* // Small devices (landscape phones, 576px and up) */
+      @media (min-width: 576px) {
+        body {
+          background-color: red;
+        }
+        h1::after {
+          content: " 576px";
+        }
+      }
+
+      /* // Medium devices (tablets, 768px and up) */
+      @media (min-width: 768px) {
+        body {
+          background-color: yellow;
+        }
+        h1::after {
+          content: " 768px";
+        }
+      }
+
+      /* // Large devices (desktops, 992px and up) */
+      @media (min-width: 992px) {
+        body {
+          background-color: blue;
+        }
+        h1::after {
+          content: " 992px";
+        }
+      }
+
+      /* // X-Large devices (large desktops, 1200px and up) */
+      @media (min-width: 1200px) {
+        body {
+          background-color: green;
+        }
+        h1::after {
+          content: " 1200px";
+        }
+      }
+
+      /* // XX-Large devices (larger desktops, 1400px and up) */
+      @media (min-width: 1400px) {
+        body {
+          background-color: black;
+          color: aliceblue;
+        }
+        h1::after {
+          content: " 1400px";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Original CSS Style -> Mobile Screen  -->
+    <!-- Media Query Breakpoints -->
+
+    <h1>Media Query</h1>
+  </body>
+</html>
+
+<!-- https://getbootstrap.com/docs/5.3/layout/breakpoints/ -->
+<!-- https://whatismyviewport.com/ -->
