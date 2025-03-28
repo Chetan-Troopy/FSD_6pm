@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animtion In CSS</title>
+
+
+    <!-- Internal CSS  -->
+
+    <style>
+        body{
+            background-color: black;
+        }
+        .box{
+            width: 100vw;
+            height: 100vh;
+            background-color: blueviolet;
+            border: 5px solid lime;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation-name: moving-box;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+
+
+        @keyframes moving-box {
+            0%{
+                background-color: green;
+            }
+            20%{
+                background-color: orange;
+                
+            }
+            40%{
+                background-color: blue;
+                
+            }
+            60%{
+                background-color: palevioletred;
+                
+            }
+            80%{
+                background-color: red;
+              
+            }
+            80%{
+                background-color: gold;
+              
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

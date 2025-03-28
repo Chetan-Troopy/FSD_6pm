@@ -4,5 +4,4 @@
 
 
 # Display Grid
-# Display None vs Visibility Hidden vs Opacity zero
-# Animation and Transform and Transition
+
