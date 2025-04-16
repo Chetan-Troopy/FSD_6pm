@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Selectors and CSS</title>
+  </head>
+  <body>
+    <h1>jQuery Selectors and CSS</h1>
+
+    <hr />
+
+    <p class="para">Paragraph</p>
+
+    <hr />
+    <button id="btnClick">Click</button>
+
+    <!-- jQuery  -->
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Your code here.
+
+        // Universal Selector 
+
+        // $('*').css('background-color', 'black');
+        $('*').css({backgroundColor: "black", color:  'white'});
+
+
+        // Element Selector 
+
+
+        $('h1').click(function () {
+          
+          $("*").css({backgroundColor: "red", color:  'white'});
+          
+        })
+
+
+
+        // Class Selector 
+
+
+        $('.para').click(function () {
+          
+          $("*").css({backgroundColor: "Green", color:  'black'});
+          
+        })
+
+
+
+
+
+        // ID Selector 
+
+
+        $('#btnClick').click(function () {
+          
+          $("*").css({backgroundColor: "yellow", color:  'black'});
+          $("button").css({backgroundColor: "blue", color:  'white', padding : "10px 30px", fontSize : "30px"});
+          
+        })
+
+
+      });
+    </script>
+  </body>
+</html>

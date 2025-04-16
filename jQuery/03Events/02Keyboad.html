@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery KeyBoard Event</title>
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>jQuery KeyBoard Event</h1>
+
+    <hr />
+
+    <input type="text" >
+    <hr>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vel error
+        iure tempore nemo tempora cumque enim eaque beatae molestias excepturi
+        laborum, aperiam, harum culpa! Maxime, eos? Consequuntur, cumque vero.
+    </div>
+
+    <hr />
+
+    <!-- jQuery  -->
+
+    <script src="../jquery-3.7.1.min.js"></script>
+
+    <!-- CSS Script  -->
+
+    <script>
+      $("*").css({ backgroundColor: "black", color: "white" });
+      $("input").css({ backgroundColor: "white", color: "black" });
+      $("div").css({
+        backgroundColor: "blue",
+        color: "white",
+        padding: "10px 30px",
+        fontSize: "30px",
+        width: "100%",
+        height: "300px",
+        border: "10px solid lime",
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        // Your code here.
+
+
+
+        // keydown
+
+        $('input').keydown(function () {
+          
+          $("div").css({backgroundColor: "yellow", color:  'black'});
+          
+
+        })
+
+        // keyup
+
+        $('input').keyup(function () {
+          
+          $("div").css({backgroundColor: "crimson", color:  'white'});
+          
+        })
+
+      });
+    </script>
+  </body>
+</html>
