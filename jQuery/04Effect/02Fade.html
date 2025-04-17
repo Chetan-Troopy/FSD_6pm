@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Fade Effect</title>
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>jQuery Fade Effect</h1>
+
+    <hr />
+
+    
+    
+    <button id="btnfadeDown">fade In</button>
+    <button id="btnfadeUp">fade Out</button>
+    <button id="btnfadeToggle">fade Toggle</button>
+    <button id="btnfadeTo">fade To</button>
+    
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vel error
+        iure tempore nemo tempora cumque enim eaque beatae molestias excepturi
+        laborum, aperiam, harum culpa! Maxime, eos? Consequuntur, cumque vero.
+    </div>
+
+    <hr />
+    <!-- jQuery  -->
+
+    <script src="../jquery-3.7.1.min.js"></script>
+
+    <!-- CSS Script  -->
+
+    <script>
+      $("*").css({ backgroundColor: "black", color: "white" });
+      $("input").css({ backgroundColor: "white", color: "black" });
+      $("div").css({
+        backgroundColor: "blue",
+        color: "white",
+        padding: "10px 30px",
+        fontSize: "30px",
+        width: "100%",
+        height: "300px",
+        border: "10px solid lime",
+      });
+      $("button").css({
+        backgroundColor: "blue",
+        color: "white",
+        padding: "10px 30px",
+        fontSize: "30px",
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        // Your code here.
+
+
+
+        // fade In
+
+        $('#btnfadeDown').click(function () {
+          
+          $("div").fadeIn(5000)
+          
+
+        })
+
+        // fade Out
+
+        $('#btnfadeUp').click(function () {
+          
+          $("div").fadeOut(3000)
+          
+        })
+
+
+
+        // fade Toggle
+
+        $('#btnfadeToggle').click(function () {
+          
+          $("div").fadeToggle(2000)
+          
+        })
+
+        // fade To
+
+        $('#btnfadeTo').click(function () {
+          
+          $("div").fadeTo(2000, 0.5)
+          
+        })
+
+      });
+    </script>
+  </body>
+</html>
