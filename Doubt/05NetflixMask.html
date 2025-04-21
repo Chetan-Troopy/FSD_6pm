@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Curved Background Image</title>
+  <style>
+    body {
+      background-color: gray;
+      margin: 0;
+      padding: 0;
+    }
+
+    .mask {
+      height: 500px;
+      width: 90%;
+      margin: auto;
+      position: relative;
+      overflow: hidden;
+      mask-image: radial-gradient(
+        101% 10% at 50% 102%,
+        transparent 50%,
+        white 52%
+      );
+      -webkit-mask-image: radial-gradient(
+        101% 10% at 50% 102%,
+        transparent 50%,
+        white 52%
+      );
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+      mask-size: cover;
+      -webkit-mask-size: cover;
+    }
+
+    .background-img {
+      background-image: url('../Images/netflix.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="mask">
+    <div class="background-img"></div>
+  </div>
+</body>
+</html>
