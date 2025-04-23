@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Variables and Data Types</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f9f9f9;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header,
+      footer {
+        background: #222;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      .container {
+        padding: 30px;
+        max-width: 1000px;
+        margin: auto;
+        background: white;
+      }
+      h1 {
+        color: #eee;
+      }
+      h2 {
+        color: #333;
+      }
+      .code {
+        background: #eee;
+        padding: 10px;
+        border-left: 4px solid #4caf50;
+        font-family: monospace;
+        white-space: pre-wrap;
+      }
+      ul {
+        line-height: 1.8;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>JavaScript Variables and Data Types</h1>
+    </header>
+
+    <div class="container">
+      <section>
+        <h2>🔰 Introduction</h2>
+        <p>
+          Variables and data types are the foundation of any programming
+          language. In JavaScript, variables are containers for storing data
+          values. JavaScript is dynamically typed, meaning a variable's data
+          type can change during execution.
+        </p>
+      </section>
+
+      <section>
+        <h2>🧪 Declaring Variables</h2>
+        <ul>
+          <li>
+            <strong>var</strong> – Oldest keyword, function-scoped. Avoid in
+            modern code.
+          </li>
+          <li>
+            <strong>let</strong> – Block-scoped, introduced in ES6. Preferred
+            for mutable variables.
+          </li>
+          <li>
+            <strong>const</strong> – Block-scoped, used for constants. Cannot be
+            reassigned.
+          </li>
+        </ul>
+        <div class="code">
+          let name = "John"; const age = 25; var city = "New York";
+        </div>
+      </section>
+
+      <section>
+        <h2>📦 JavaScript Data Types</h2>
+        <p>JavaScript has two main categories of data types:</p>
+
+        <h3>Primitive Data Types</h3>
+        <ul>
+          <li><strong>String</strong>: "Hello", 'World'</li>
+          <li><strong>Number</strong>: 123, 3.14</li>
+          <li><strong>Boolean</strong>: true or false</li>
+          <li><strong>Null</strong>: intentional absence of any value</li>
+          <li>
+            <strong>Undefined</strong>: variable declared but not assigned
+          </li>
+          <li><strong>Symbol</strong>: unique and immutable value (ES6)</li>
+          <li>
+            <strong>BigInt</strong>: large integers beyond Number (ES2020)
+          </li>
+        </ul>
+
+        <h3>Non-Primitive (Reference) Data Types</h3>
+        <ul>
+          <li><strong>Object</strong></li>
+          <li><strong>Array</strong></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>🧰 Examples</h2>
+        <div class="code">
+          // Primitive types let username = "Alice"; // String let age = 30; //
+          Number let isLoggedIn = true; // Boolean let score = null; // Null let
+          value; // Undefined // Reference types let user = { name: "Bob", age:
+          28 }; // Object let colors = ["red", "green", "blue"]; // Array
+          function greet() { console.log("Hello!"); }
+        </div>
+      </section>
+
+      <section>
+        <h2>🧠 Type Checking</h2>
+        <p>
+          You can use <code>typeof</code> operator to check the type of a
+          variable.
+        </p>
+        <div class="code">
+          typeof "Hello" // "string" typeof 100 // "number" typeof null //
+          "object" (a known JavaScript quirk) typeof undefined // "undefined"
+          typeof [] // "object" typeof {} // "object" typeof function() {} //
+          "function"
+        </div>
+      </section>
+
+      <section>
+        <h2>📌 Best Practices</h2>
+        <ul>
+          <li>
+            Use <code>let</code> and <code>const</code> instead of
+            <code>var</code>.
+          </li>
+          <li>
+            Use <code>const</code> by default; switch to <code>let</code> only
+            when reassignment is needed.
+          </li>
+          <li>Give descriptive variable names.</li>
+          <li>Initialize variables when declared if possible.</li>
+        </ul>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 JavaScript Course | Lecture 2: Variables and Data Types</p>
+    </footer>
+
+    <script>
+      // Variables In Js
+
+      // Rules of Decalring Variables
+
+      // Always Start From _,$, Alphabet
+
+      // Var => It was Used before ES6
+
+      // var a;   // Decalration
+      // a =10 ;   // Assignement
+
+      // var a = 10;    // Initialization and Declration
+      // var a = 20;    // Re-Declration Is Possible
+      // a = 30;        // Re-Assignment Is Possible
+      // console.log(a);
+
+      // let => It was Introduce in ES6 , Now We use let
+
+      // let rahul = 90;        // Initialization and Declration
+      // // let rahul = 30;     // Re-Declration Is Not Possible  // ye chiz hum nhi krte
+      // rahul = 95;            // Re-Assignment Is Possible
+      // console.log(rahul);
+
+      // const => Constant Variable
+
+      // const Fav_Player = "Virat Kohli";     // Initialization and Declration
+      // // const Fav_Player = "Suresh Raina"; // Re-Declration Is Not Possible  // ye chiz hum nhi krte
+      // // Fav_Player = "Rahul";                 // Re-Assignment Is Not Possible
+      // console.log(Fav_Player);
+
+      // Scope
+
+      // {}  => Block
+
+      // Data Types
+
+      // Primitive Data Types
+
+      // NNSSBBU
+
+      // Number
+
+      let a = 10;
+      console.log(a);
+      console.log(typeof a);
+
+      // null
+
+      let b = null; // Ye ek Empty Place hai
+      console.log(b);
+      console.log(typeof b);
+
+      // Symbol
+
+      let c = Symbol("Hello");
+      console.log(c);
+      console.log(typeof c);
+
+      // String
+
+      //   let d = "This is Paragraph";
+      //   let d = 'This is Paragraph';
+      //   let d = 'This "is" Paragraph';
+      let d = `My Friend is "Rahul" and he Plays 'Football'`; // With the Help of Backtick or Template Literals
+      console.log(d);
+      console.log(typeof d);
+
+      // Boolean
+
+      let e = false;
+      console.log(e);
+      console.log(typeof e);
+
+      // BigInt
+
+      let f = 545454n;
+      console.log(f);
+      console.log(typeof f);
+
+      // Undefined
+
+      let g;
+      console.log(g);
+      console.log(typeof g);
+
+      //   What is The Difference Between Undefined and Not Defined ?
+
+      // Undefined => When a variable is Declare but Value is Not Assigned
+      // Not Defined => When a variable is not Declared.
+
+      //   console.log(h);   // Not Defined
+
+      //   Non Primitive Data Types
+
+      // Array
+
+      // =>  when we want to store multiple values or data types
+      // =>  An array can hold many values under a single name
+
+      let arr = ["Ronit", "hardi", "Dharti", "Jay", "Sejal"];
+
+      console.log(arr);
+      //   console.log(arr[0]);
+      //   console.log(arr[1]);
+      //   console.log(arr[2]);
+      //   console.log(arr[3]);
+      //   console.log(arr[4]);
+      //   console.log(arr.length);
+      //   console.log(typeof arr);
+
+      // Object
+
+      // => An object is a collection of properties, and a property is an association
+      //    between a name (or key) and a value.
+
+      // Key and value Pairs
+
+      let myObj = {
+        name: "Rahul",
+        age: 20,
+        isLoggedIn: true,
+      };
+
+
+      console.log(myObj);
+      console.log(myObj.name);
+      console.log(myObj.age);
+      console.log(myObj.isLoggedIn);
+      
+    </script>
+  </body>
+</html>
