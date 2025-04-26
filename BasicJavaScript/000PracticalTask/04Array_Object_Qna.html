@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interview Q&A</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .qna {
+            margin-top: 20px;
+        }
+        .question {
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            position: relative;
+        }
+        .question:after {
+            content: "+";
+            position: absolute;
+            right: 15px;
+            font-size: 20px;
+        }
+        .question.active:after {
+            content: "-";
+        }
+        .answer {
+            display: none;
+            background: #eef;
+            padding: 10px;
+            border-left: 3px solid #007bff;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>JavaScript Interview Q&A</h1>
+
+    <h2>Array Methods</h2>
+    <div class="qna">
+        <div class="question">1. What is the difference between `push()` and `unshift()`?</div>
+        <div class="answer">`push()` adds an element at the end, while `unshift()` adds it at the beginning.</div>
+
+        <div class="question">2. How does `splice()` work?</div>
+        <div class="answer">`splice(start, deleteCount, item1, item2, ...)` modifies an array by adding/removing elements.</div>
+
+        <div class="question">3. What does `slice()` do?</div>
+        <div class="answer">Returns a shallow copy of a portion of an array without modifying the original.</div>
+
+        <div class="question">4. How to check if an array includes a specific value?</div>
+        <div class="answer">Use `includes(value)`, `indexOf(value)`, or `some(callback)`. </div>
+
+        <div class="question">5. Difference between `pop()` and `shift()`?</div>
+        <div class="answer">`pop()` removes the last element, `shift()` removes the first element.</div>
+
+        <div class="question">6. What does `concat()` do?</div>
+        <div class="answer">Merges two or more arrays without modifying the original arrays.</div>
+
+        <div class="question">7. How does `reverse()` work?</div>
+        <div class="answer">Reverses the order of elements in an array.</div>
+
+        <div class="question">8. How to find the index of an element in an array?</div>
+        <div class="answer">Use `indexOf(value)`.</div>
+
+        <div class="question">9. How to join array elements into a string?</div>
+        <div class="answer">Use `join(separator)`, default separator is a comma.</div>
+
+        <div class="question">10. Difference between `every()` and `some()`?</div>
+        <div class="answer">`every()` checks if all elements satisfy a condition, `some()` checks if at least one does.</div>
+    </div>
+
+    <h2>Object Methods</h2>
+    <div class="qna">
+        <div class="question">11. How to get all keys of an object?</div>
+        <div class="answer">Use `Object.keys(obj)`.</div>
+
+        <div class="question">12. How to get all values of an object?</div>
+        <div class="answer">Use `Object.values(obj)`.</div>
+
+        <div class="question">13. How to merge two objects?</div>
+        <div class="answer">Use `Object.assign(target, source)` or `{ ...obj1, ...obj2 }` (spread operator).</div>
+
+        <div class="question">14. How to check if an object has a specific property?</div>
+        <div class="answer">Use `obj.hasOwnProperty('property')` or `'property' in obj`.</div>
+
+        <div class="question">15. How to freeze an object?</div>
+        <div class="answer">Use `Object.freeze(obj)`, which prevents modifications.</div>
+
+        <div class="question">16. How to seal an object?</div>
+        <div class="answer">Use `Object.seal(obj)`, which allows modifications but prevents adding/removing properties.</div>
+
+        <div class="question">17. How to convert an object into an array?</div>
+        <div class="answer">Use `Object.entries(obj)`.</div>
+
+        <div class="question">18. How to clone an object?</div>
+        <div class="answer">Use `{ ...obj }` (spread operator) or `Object.assign({}, obj)`.</div>
+
+        <div class="question">19. How to get an object's prototype?</div>
+        <div class="answer">Use `Object.getPrototypeOf(obj)`.</div>
+
+        <div class="question">20. How to check if two objects are equal?</div>
+        <div class="answer">Use `JSON.stringify(obj1) === JSON.stringify(obj2)`.</div>
+
+        <div class="question">21. How to create an object without a prototype?</div>
+        <div class="answer">Use `Object.create(null)`.</div>
+
+        <div class="question">22. What does `Object.defineProperty()` do?</div>
+        <div class="answer">Defines a new property with specific descriptors like `writable`, `configurable`.</div>
+
+        <div class="question">23. What is `Object.getOwnPropertyDescriptors()`?</div>
+        <div class="answer">Returns all property descriptors of an object.</div>
+
+        <div class="question">24. How to copy an object deeply?</div>
+        <div class="answer">Use `structuredClone(obj)` or `JSON.parse(JSON.stringify(obj))`.</div>
+
+        <div class="question">25. What does `Object.is()` do?</div>
+        <div class="answer">Checks if two values are the same, similar to `===` but handles NaN and -0 correctly.</div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll(".question").forEach(question => {
+        question.addEventListener("click", () => {
+            question.classList.toggle("active");
+            const answer = question.nextElementSibling;
+            answer.style.display = answer.style.display === "block" ? "none" : "block";
+        });
+    });
+</script>
+
+</body>
+</html>
