@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Q&A</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    section {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .question {
+      margin-top: 20px;
+    }
+    .question strong {
+      display: block;
+      color: #2980b9;
+    }
+    .code {
+      background-color: #eee;
+      padding: 10px;
+      border-radius: 5px;
+      font-family: monospace;
+      white-space: pre;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🔰 JavaScript Basics - Q&A</h1>
+
+  <section>
+    <h2>Section 1: JavaScript Introduction (10 Questions)</h2>
+
+    <div class="question">
+      <strong>Q1. JavaScript kya hai?</strong>
+      <p>Ans: JavaScript ek high-level, interpreted programming language hai jo browsers mein chalti hai. Yeh web pages ko dynamic aur interactive banata hai.</p>
+      <p><em>Explanation:</em> HTML structure provide karta hai, CSS styling, aur JavaScript functionality.</p>
+    </div>
+
+    <div class="question">
+      <strong>Q2. JavaScript client-side ya server-side language hai?</strong>
+      <p>Ans: JavaScript primarily client-side hai, but Node.js ke through yeh server-side bhi chal sakta hai.</p>
+      <p><em>Explanation:</em> Node.js JavaScript ka server-side runtime hai.</p>
+    </div>
+
+    <div class="question">
+      <strong>Q3. JavaScript ko HTML file mein kaise add karte hain?</strong>
+      <p>Ans:</p>
+      <div class="code">
+&lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;!-- ya --&gt;
+&lt;script&gt;
+  // JS code
+&lt;/script&gt;
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>Q4. JavaScript aur Java mein kya difference hai?</strong>
+      <p>Ans: Java ek statically typed, compiled language hai, jabki JavaScript dynamically typed aur interpreted language hai.</p>
+    </div>
+
+    <div class="question">
+      <strong>Q5. JavaScript ka engine kya hota hai?</strong>
+      <p>Ans: JavaScript engine browser mein hota hai, jaise Chrome mein V8 engine.</p>
+    </div>
+
+    <div class="question">
+      <strong>Q6. JavaScript synchronous ya asynchronous hai?</strong>
+      <p>Ans: JavaScript synchronous hai, lekin asynchronous operations support karta hai (callbacks, promises, async/await se).</p>
+    </div>
+
+    <div class="question">
+      <strong>Q7. Browser JavaScript ko kaise run karta hai?</strong>
+      <p>Ans: Browser ka JS engine code ko parse karta hai, aur memory allocate karke execute karta hai.</p>
+    </div>
+
+    <div class="question">
+      <strong>Q8. JavaScript mein loosely typed ka kya matlab hai?</strong>
+      <p>Ans: JavaScript mein variables ka type define nahi karna padta, runtime par automatically decide hota hai.</p>
+    </div>
+
+    <div class="question">
+      <strong>Q9. JavaScript ka use sirf browser mein hota hai kya?</strong>
+      <p>Ans: Nahi, Node.js ke through JavaScript backend mein bhi use hota hai.</p>
+    </div>
+
+    <div class="question">
+      <strong>Q10. JavaScript code ko debug kaise karte hain?</strong>
+      <p>Ans: Browser ke Developer Tools (Inspect > Console) ka use karke hum debug kar sakte hain.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>🧮 Section 2: Variables and Data Types (15 Questions)</h2>
+
+    <div class="question">
+      <strong>Q11. JavaScript mein variables kaise declare karte hain?</strong>
+      <div class="code">
+var x = 10;
+let y = 20;
+const z = 30;
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>Q12. var, let aur const mein kya difference hai?</strong>
+      <p><strong>var:</strong> function-scoped, redeclare allowed</p>
+      <p><strong>let:</strong> block-scoped, redeclare not allowed</p>
+      <p><strong>const:</strong> block-scoped, value change nahi kar sakte</p>
+    </div>
+
+    <div class="question">
+      <strong>Q13. JavaScript mein primitive data types kaunse hain?</strong>
+      <p>Ans: String, Number, Boolean, Null, Undefined, Symbol, BigInt</p>
+    </div>
+
+    <div class="question">
+      <strong>Q14. typeof operator kya karta hai?</strong>
+      <p>Ans: Variable ka type batata hai.<br>
+      Example: <code>typeof "hello"</code> returns <code>"string"</code></p>
+    </div>
+
+    <div class="question">
+      <strong>Q15. Undefined aur null mein kya difference hai?</strong>
+      <p><strong>undefined:</strong> variable declare hua hai par value assign nahi hui.</p>
+      <p><strong>null:</strong> intentionally khali value assign ki gayi hai.</p>
+    </div>
+
+    <div class="question">
+      <strong>Q16. NaN ka matlab kya hai?</strong>
+      <p>Ans: Not-a-Number, yeh tab aata hai jab numeric calculation invalid ho.<br>
+      Example: <code>parseInt("abc") // NaN</code></p>
+    </div>
+
+    <div class="question">
+      <strong>Q17. JavaScript mein dynamic typing kya hoti hai?</strong>
+      <p>Ans: Variable ka type runtime par change ho sakta hai.</p>
+      <div class="code">
+let a = 10;
+a = "hello"; // valid
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>Q18. const object ki value change kar sakte hain kya?</strong>
+      <p>Ans: Object ka reference change nahi kar sakte, par uske properties change kar sakte hain.</p>
+    </div>
+
+    <div class="question">
+      <strong>Q19. BigInt kya hai?</strong>
+      <p>Ans: Bahut bade numbers ko store karne ke liye use hota hai.<br>
+      Example: <code>let big = 12345678901234567890n;</code></p>
+    </div>
+
+    <div class="question">
+      <strong>Q20. Boolean type ka example do.</strong>
+      <div class="code">
+let isLogin = true;
+let hasAccess = false;
+      </div>
+    </div>
+
+
+    <h2>🔤 Section 2: Strings & Hoisting (Q21–Q25)</h2>
+
+    <div class="question">
+      <strong>Q21. JavaScript mein string declare kaise karte hain?</strong><br>
+      Ans: Single ('hello'), double ("hello") ya template literals (`hello`) se.
+    </div>
+  
+    <div class="question">
+      <strong>Q22. Template literals kya hain?</strong><br>
+      Ans: Backticks (`) ka use karke string interpolation kar sakte hain.
+      <pre><code>let name = "Raj";
+  console.log(`Hello, ${name}`);</code></pre>
+    </div>
+  
+    <div class="question">
+      <strong>Q23. typeof null kya return karta hai?</strong><br>
+      Ans: "object" (yeh ek historical bug hai)
+    </div>
+  
+    <div class="question">
+      <strong>Q24. typeof NaN kya return karta hai?</strong><br>
+      Ans: "number"
+    </div>
+  
+    <div class="question">
+      <strong>Q25. var hoisting kya hai?</strong><br>
+      Ans: JavaScript mein var declarations top par move ho jati hain execution se pehle.
+    </div>
+  
+    <h2>🛠️ Section 3: Methods (Q26–Q35)</h2>
+  
+    <div class="question">
+      <strong>Q26. Method kya hota hai?</strong><br>
+      Ans: Function jo kisi object ke andar defined hota hai.
+      <pre><code>let person = {
+    greet: function() {
+      return "Hello";
+    }
+  };</code></pre>
+    </div>
+  
+    <div class="question">
+      <strong>Q27. Function declaration aur expression mein kya farak hai?</strong><br>
+      Ans:
+      <ul>
+        <li><strong>Declaration:</strong> <code>function greet() {}</code></li>
+        <li><strong>Expression:</strong> <code>let greet = function() {};</code></li>
+      </ul>
+    </div>
+  
+    <div class="question">
+      <strong>Q28. Arrow function kya hota hai?</strong><br>
+      Ans: Short syntax hoti hai.
+      <pre><code>const greet = () => "Hello";</code></pre>
+    </div>
+  
+    <div class="question">
+      <strong>Q29. Arrow function aur normal function mein difference?</strong><br>
+      Ans: Arrow function <code>this</code> bind nahi karta, aur implicit return allow karta hai.
+    </div>
+  
+    <div class="question">
+      <strong>Q30. String method example do.</strong><br>
+      <pre><code>let str = "hello";
+  console.log(str.toUpperCase()); // "HELLO"</code></pre>
+    </div>
+  
+    <div class="question">
+      <strong>Q31. Number method example?</strong><br>
+      <pre><code>let num = 123.456;
+  console.log(num.toFixed(2)); // "123.46"</code></pre>
+    </div>
+  
+    <div class="question">
+      <strong>Q32. parseInt() aur parseFloat() mein difference?</strong><br>
+      Ans: <code>parseInt()</code> integer return karta hai, <code>parseFloat()</code> decimal allow karta hai.
+    </div>
+  
+    <div class="question">
+      <strong>Q33. Object method call kaise karte hain?</strong><br>
+      <pre><code>obj.methodName();</code></pre>
+    </div>
+  
+    <div class="question">
+      <strong>Q34. isNaN() function kya karta hai?</strong><br>
+      Ans: Check karta hai ki value NaN hai ya nahi.
+      <pre><code>isNaN("abc") // true</code></pre>
+    </div>
+  
+    <div class="question">
+      <strong>Q35. Array ka length method kya karta hai?</strong><br>
+      Ans: Array ke elements ki total count return karta hai.
+    </div>
+
+
+    <h2>🔁 Section 4: Conditional Statements (Q36–Q50)</h2>
+
+    <div class="question">
+      <strong>Q36. Conditional statement kya hoti hai?</strong><br>
+      Ans: Logic ke base par code run karna (if-else, switch)
+    </div>
+  
+    <div class="question">
+      <strong>Q37. if-else statement ka syntax kya hota hai?</strong><br>
+      <pre><code>if (condition) {
+    // code
+  } else {
+    // code
+  }</code></pre>
+    </div>
+  
+    <div class="question">
+      <strong>Q38. Ternary operator kya hota hai?</strong><br>
+      Ans: Short form of if-else
+      <pre><code>let result = age >= 18 ? "Adult" : "Minor";</code></pre>
+    </div>
+  
+    <div class="question">
+      <strong>Q39. == aur === mein kya difference hai?</strong><br>
+      Ans:
+      <ul>
+        <li><strong>==</strong> type conversion karta hai</li>
+        <li><strong>===</strong> strict equality check karta hai (type bhi match hona chahiye)</li>
+      </ul>
+    </div>
+  
+    <div class="question">
+      <strong>Q40. switch statement ka use kab karte hain?</strong><br>
+      Ans: Jab multiple conditions check karni ho same variable ke against.
+    </div>
+  
+    <div class="question">
+      <strong>Q41. Nested if-else kya hota hai?</strong><br>
+      Ans: if ke andar dusra if statement.
+      <pre><code>if (a > 0) {
+    if (a < 10) {
+      console.log("0 to 10");
+    }
+  }</code></pre>
+    </div>
+  
+    <div class="question">
+      <strong>Q42. JavaScript mein falsy values kaun si hain?</strong><br>
+      Ans: false, 0, "", null, undefined, NaN
+    </div>
+  
+    <div class="question">
+      <strong>Q43. if condition mein string check kar sakte hain kya?</strong><br>
+      Ans: Haan, empty string false hoti hai, non-empty true.
+    </div>
+  
+    <div class="question">
+      <strong>Q44. JavaScript mein short-circuiting kya hoti hai?</strong><br>
+      Ans: <code>||</code> aur <code>&&</code> ka use karke default value assign karna.
+      <pre><code>let name = userInput || "Guest";</code></pre>
+    </div>
+  
+    <div class="question">
+      <strong>Q45. if (0) chalega kya?</strong><br>
+      Ans: Nahi, kyunki 0 falsy hota hai.
+    </div>
+  
+    <div class="question">
+      <strong>Q46. if ('0') chalega kya?</strong><br>
+      Ans: Haan, kyunki '0' ek non-empty string hai (truthy).
+    </div>
+  
+    <div class="question">
+      <strong>Q47. Multiple conditions kaise likhte hain?</strong><br>
+      <pre><code>if (a > 0 && a < 100) { ... }</code></pre>
+    </div>
+  
+    <div class="question">
+      <strong>Q48. else if statement kya hota hai?</strong><br>
+      Ans: Multiple conditions chain karne ke liye use hota hai.
+    </div>
+  
+    <div class="question">
+      <strong>Q49. Conditional statements mein scope ka kya role hai?</strong><br>
+      Ans: let/const block scope mein confined rehte hain.
+    </div>
+  
+    <div class="question">
+      <strong>Q50. Truthy aur falsy ka use kab hota hai?</strong><br>
+      Ans: Jab koi variable directly condition mein use karte hain.
+    </div>
+  </section>
+
+</body>
+</html>
